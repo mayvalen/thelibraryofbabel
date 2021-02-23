@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Untitled Serif Test';
+    src: url('UntitledSerif-RegularTest.woff2') format('woff2'),
+        url('UntitledSerif-RegularTest.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

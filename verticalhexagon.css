@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Untitled Serif Test';
+    src: url('fonts/untitledserif/UntitledSerif-RegularTest.woff2') format('woff2'),
+        url('fonts/untitledserif/UntitledSerif-RegularTest.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+body {
+    font-family: 'Untitled Serif Test';
+    background-color: darkred;
+    color: white;
+}
+.leftalign {
+	color: white;
+	text-align: left;
+}
+/*text center*/
+.center {
+  display: flex;
+  justify-content: center;
+}
+.hexagontype {
+    padding-top: 300px;
+}
+/*arrows*/
+.rightarrow {
+  position: relative;
+  top: -50px;
+  left: 1100px;
+}
+.leftarrow {
+  position: relative;
+  top: -50px;
+  left: 250px;
+}
+.uparrow {
+  position: relative;
+  top: -380px;
+  display: flex;
+  justify-content: center;
+}
+.downarrow {
+  position: relative;
+  top: 230px;
+  display: flex;
+  justify-content: center;
+}

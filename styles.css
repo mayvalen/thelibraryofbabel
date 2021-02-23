@@ -1,10 +1,46 @@
+@font-face {
+  font-family: 'Untitled Serif Test';
+  src: url('fonts/untitledserif/UntitledSerif-RegularTest.woff2') format('woff2'),
+      url('fonts/untitledserif/UntitledSerif-RegularTest.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  font-family: 'Untitled Serif Test';
+  color: white;
+}
 html {
-	background-color: black;
+  height: 5000px;
+  background-color: navy; /* For browsers that do not support gradients */
+  background-image: linear-gradient(navy, black);
 }
 .leftalign {
 	color: white;
 	text-align: left;
 }
+/*text center*/
+.center {
+  display: flex;
+  justify-content: center;
+}
+.one {
+  padding-top: 300px;
+}
+
+/*arrows as images */
+.rightarrow {
+  position: relative;
+  left: 1100px;
+  top: -75px;
+}
+.leftarrow {
+  position: relative;
+  top: -50px;
+  left: 250px;
+}
+
+
 /*left justified scroll animation to the left*/
 .scrollleft {
   position: fixed;
@@ -20,13 +56,11 @@ html {
   animation-iteration-count: 1;
   animation-fill-mode: both;
 }
-
 @keyframes rotate {
   to {
     transform: rotate(360deg);
   }
 }
-
 body {
   min-height: 500vh;
 }
