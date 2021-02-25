@@ -6,43 +6,76 @@
     font-style: normal;
     font-display: swap;
   }
-body {
+  html {
+    background-color: rgb(7, 0, 39); 
+  }
+  body {
     font-family: 'Untitled Serif Test';
-    background-color: darkred;
     color: white;
-}
-.leftalign {
-	color: white;
-	text-align: left;
-}
-/*text center*/
-.center {
-  display: flex;
-  justify-content: center;
-}
-.hexagontype {
-    padding-top: 300px;
-}
-/*arrows*/
-.rightarrow {
-  position: relative;
-  top: -50px;
-  left: 1100px;
-}
-.leftarrow {
-  position: relative;
-  top: -50px;
-  left: 250px;
-}
-.uparrow {
-  position: relative;
-  top: -380px;
-  display: flex;
-  justify-content: center;
-}
-.downarrow {
-  position: relative;
-  top: 230px;
-  display: flex;
-  justify-content: center;
-}
+    font-size: 1.3em;
+  }
+  /*text center and fade it*/
+  .center {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    animation-name: opacity;
+    animation-duration: 1s;
+  }
+  @keyframes opacity{
+    0% {opacity: 0}
+    100% {opacity: 1}
+  }
+  .one {
+    padding-top: 150px;
+    padding-bottom: none;
+  }
+
+  #scramble {
+    display: none;
+  }
+  
+  .walk {
+    background-color: rgb(255, 255, 255);
+    padding-right: 5px;
+    padding-left: 5px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 670px;
+    margin-left: 1100px;
+  }
+  .step {
+    background-color: rgb(255, 255, 255);
+    padding-right: 5px;
+    padding-left: 5px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 670px;
+    margin-left: 200px;
+  }
+  .upstairs {
+    background-color: rgb(255, 255, 255);
+    padding-right: 5px;
+    padding-left: 5px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 25px;
+    margin-left: 650px;
+  }
+  .down {
+    background-color: rgb(255, 255, 255);
+    padding-right: 5px;
+    padding-left: 5px;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute;
+    margin-top: 670px;
+    margin-left: 650px;
+  }
